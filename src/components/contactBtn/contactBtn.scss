@@ -1,0 +1,30 @@
+.contact-btn {
+  border: 2px solid transparent;
+  background: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: .3s;
+
+  @media (max-width:560px) {
+    padding: 4px;
+  }
+
+  .icon-cart {
+    width: 25px;
+    height: 20px;
+    fill: rgba(143, 78, 48, 1);
+    transition: .3s;
+    // margin-right: 10px;
+  }
+
+  &:hover {
+    border-color: rgba(143, 78, 48, 1);
+
+    .icon-cart {
+      fill: rgb(99, 54, 34);
+    }
+  }
+
+}

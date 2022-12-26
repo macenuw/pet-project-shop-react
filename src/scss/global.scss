@@ -1,0 +1,130 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  max-width: 1920px;
+  margin: 0 auto !important;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1650px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  @media (max-width:900px) {
+    padding: 0 10px;
+  }
+}
+
+.title {
+  font-family: "PoiretOne";
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: rgba(143, 78, 48, 1);
+  position: relative;
+  text-transform: uppercase;
+
+  @media (max-width:1080px) {
+    font-size: 32px;
+  }
+
+  @media (max-width:750px) {
+    font-size: 24px;
+  }
+
+  &::after {
+    content: '';
+    width: 120%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(143, 78, 48, 1);
+    bottom: -3px;
+    left: 0;
+
+    @media (max-width:750px) {
+      width: 100%;
+    }
+  }
+}
+
+.decor {
+  padding-right: 90px;
+
+  &::after {
+    content: '\2192';
+    position: absolute;
+    right: 14px;
+    top: -2px;
+    font-size: 56px;
+    line-height: 30px;
+  }
+
+  &::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid rgba(143, 78, 48, 1);
+    top: -3px;
+    right: 5px;
+  }
+
+  &:hover {
+    &::after {
+      -webkit-animation: slide-right .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+      animation: slide-right .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    }
+  }
+}
+
+.button {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: #8F4E30;
+  background: rgba(235, 191, 144, 0.5);
+  border: 1px solid #8F4E30;
+  padding: 12px 60px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background-color: #8F4E30;
+    color: #fff;
+  }
+
+  &:active {
+    border-color: #fff;
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+
+  100% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+
+  100% {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+}

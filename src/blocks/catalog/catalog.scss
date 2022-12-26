@@ -1,0 +1,26 @@
+.catalog {
+  margin-bottom: 100px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    &::after {
+      left: -10%;
+    }
+  }
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px;
+
+    @media (max-width:700px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

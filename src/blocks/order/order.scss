@@ -1,0 +1,121 @@
+.order {
+  margin-bottom: 60px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    @media (max-width:900px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__label-name {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #696969;
+    margin-bottom: 18px;
+  }
+
+  &__input {
+    border: 1px solid #B0B0B0;
+    padding: 12px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #696969;
+  }
+
+  &__list {
+    background-color: #b47f67c9;
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  &__ordered {
+    display: block;
+    background-color: #8F4E30;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    transition: .3s;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    @media (max-width:900px) {
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+
+    &:hover {
+      background-color: #c97650;
+    }
+  }
+}
+
+.notice {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  background-color: rgba(180, 127, 103, 0.7882352941);
+  border-radius: 20px;
+  font-weight: bold;
+  color: #FFF;
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,66 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  &__link {
+    color: rgba(143, 78, 48, 1);
+    font-weight: medium;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__menu-btn {
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: none;
+
+    @media (max-width:560px) {
+      display: block;
+      margin-left: auto;
+      margin-right: 12px;
+    }
+  }
+
+  &__btn-decor {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: rgba(143, 78, 48, 1);
+    left: calc(50% - 10px);
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: rgba(143, 78, 48, 1);
+      left: calc(50% - 10px);
+    }
+
+    &::after {
+      top: -6px;
+    }
+
+    &::before {
+      top: 6px;
+    }
+  }
+}

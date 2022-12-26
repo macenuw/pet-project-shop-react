@@ -1,0 +1,244 @@
+.product {
+  margin-bottom: 100px;
+  font-feature-settings: 'pnum'on, 'lnum'on;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:700px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img-inner {
+    max-width: 600px;
+    width: 100%;
+    height: 800px;
+    margin-right: 60px;
+
+    @media (max-width:900px) {
+      height: 600px;
+      margin-right: 20px;
+    }
+
+    @media (max-width:700px) {
+      height: 600px;
+      max-height: 80vh;
+      margin-right: 0;
+      max-width: 500px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &__name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 40px;
+
+    @media (max-width:900px) {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    @media (max-width:700px) {
+      text-align: center;
+    }
+  }
+
+  &__color-name {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: block;
+
+    @media (max-width:900px) {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__size {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: block;
+
+    @media (max-width:900px) {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+    @media (max-width:900px) {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__colors {
+    margin-bottom: 60px;
+    display: grid;
+    max-width: 320px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+
+    @media (max-width:900px) {
+      margin-bottom: 30px;
+      max-width: 240px;
+    }
+
+    @media (max-width:700px) {
+      margin-bottom: 30px;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  &__colors-item {
+    margin: 0 auto;
+    transition: .3s;
+    width: 30px;
+    height: 30px;
+
+    @media (max-width:900px) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width:700px) {
+      width: 30px;
+      height: 30px;
+      margin: 0;
+    }
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+
+  &__color {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(143, 78, 48, .3);
+
+    @media (max-width:900px) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width:700px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__price {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: rgba(143, 78, 48, 1);
+    margin-bottom: 60px;
+
+    @media (max-width:900px) {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+  }
+
+  &__consist {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(143, 78, 48, 1);
+    margin-bottom: 30px;
+
+    @media (max-width:900px) {
+      font-size: 16px;
+    }
+  }
+
+  &__amount {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    border-radius: 50%;
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(143, 78, 48, 1);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background: rgba(235, 191, 144, 0.25)
+    }
+  }
+
+  &__input {
+    text-align: center;
+    border: none;
+    max-width: 40px;
+    padding: 4px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__add-btn {
+    @media (max-width:700px) {
+      width: 100%;
+    }
+  }
+}
+
+.notice {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  background-color: rgba(180, 127, 103, 0.7882352941);
+  border-radius: 20px;
+  font-weight: bold;
+  color: #FFF;
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

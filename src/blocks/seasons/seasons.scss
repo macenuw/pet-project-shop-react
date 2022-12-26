@@ -1,0 +1,87 @@
+.seasons {
+  margin-bottom: 100px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 350px 350px;
+    grid-gap: 30px;
+
+    @media (max-width:1080px) {
+      grid-template-rows: 250px 250px;
+      grid-gap: 20px;
+    }
+
+    @media (max-width:750px) {
+      grid-template-rows: 200px 200px;
+      grid-gap: 20px;
+    }
+
+    @media (max-width:550px) {
+      grid-template-rows: repeat(3, 250px);
+      grid-template-columns: none;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .3s;
+
+    &--winter {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-image: url('../../images/seasons/winter.jpg');
+
+      @media (max-width:550px) {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+    }
+
+    &--autumn {
+      background-image: url('../../images/seasons/autumn.jpg');
+    }
+
+    &--summer {
+      background-image: url('../../images/seasons/summer.jpg');
+    }
+
+    &:hover {
+      .seasons__text {
+        background-color: rgba(143, 78, 48, .7);
+      }
+    }
+  }
+
+  &__text {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(143, 78, 48, 0.5);
+    padding: 20px 0;
+    transition: .3s;
+  }
+
+  .title {
+    color: #fff;
+    margin-bottom: 0;
+
+    &::after {
+      bottom: 15px;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+}

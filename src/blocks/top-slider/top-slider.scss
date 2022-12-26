@@ -1,0 +1,88 @@
+.top-slider {
+  overflow: hidden;
+  margin-bottom: 100px;
+
+  &__items {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    display: none;
+
+    @media (max-width: 1170px) {
+      height: 400px;
+    }
+
+    @media (max-width: 600px) {
+      height: 300px;
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__title {
+    font-family: 'PoiretOne';
+    font-size: 64px;
+    color: #fff;
+    padding: 12px 0 16px 64px;
+    width: 100%;
+    font-weight: 300;
+    background: linear-gradient(90deg, #916855 13.27%, rgba(217, 217, 217, 0) 51.07%);
+
+    @media (max-width: 1170px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__dot {
+    width: 40px;
+    height: 5px;
+    background-color: rgba(143, 78, 48, 0.3);
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &.active {
+      background-color: rgba(143, 78, 48, 1);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: .8s;
+  animation-fill-mode: both;
+}
