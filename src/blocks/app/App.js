@@ -16,7 +16,6 @@ const App = () => {
   const [contactModal, setContactModal] = useState(false);
   const [order, setorder] = useState({});
   const [total, setTotal] = useState(0);
-
   useEffect(() => {
     totalCost();
   }, [order]);
@@ -77,16 +76,16 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <Header onCartClick={onCartClick} onContactClick={onContactClick} />
+        <Header onCartClick={onCartClick} onContactClick={onContactClick} />{" "}
         <main>
           <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/catalog/:season" element={<CatalogPage />} />
+            <Route path="/" element={<MainPage />} />{" "}
+            <Route path="/catalog/:season" element={<CatalogPage />} />{" "}
             <Route
               exact
               path="/product/:model/:color"
               element={<ProductPage addToCart={addToCart} />}
-            ></Route>
+            ></Route>{" "}
             <Route
               exact
               path="/order"
@@ -99,10 +98,12 @@ const App = () => {
                   }}
                 />
               }
-            ></Route>
-            <Route path="*" element={<ErrorPage />}></Route>
-          </Routes>
-        </main>
+            ></Route>{" "}
+            <Route path="*" element={<ErrorPage />}>
+              {" "}
+            </Route>{" "}
+          </Routes>{" "}
+        </main>{" "}
         <Footer />
         <Cart
           onCartClick={onCartClick}
@@ -111,9 +112,9 @@ const App = () => {
           deleteColor={deleteColor}
           total={total}
           cartModal={cartModal}
-        />
-        <Contact onContactClick={onContactClick} contactModal={contactModal} />
-      </div>
+        />{" "}
+        <Contact onContactClick={onContactClick} contactModal={contactModal} />{" "}
+      </div>{" "}
     </Router>
   );
 };
