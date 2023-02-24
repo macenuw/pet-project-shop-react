@@ -137,6 +137,12 @@
 
     &:hover {
       transform: scale(1.4);
+
+      @media (max-width:900px) {
+        &:hover {
+          transform: scale(1);
+        }
+      }
     }
   }
 
@@ -235,6 +241,7 @@
   border-radius: 20px;
   font-weight: bold;
   color: #FFF;
+  z-index: 999;
 
   &__text {
     font-size: 14px;

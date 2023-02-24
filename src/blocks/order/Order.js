@@ -98,6 +98,7 @@ const Order = (props) => {
             setTimeout(() => {
               setShowMessage(false);
             }, 2000);
+            localStorage.removeItem('order')
             formik.resetForm();
           }
         });

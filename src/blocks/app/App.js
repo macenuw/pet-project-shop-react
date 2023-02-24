@@ -19,6 +19,11 @@ const App = () => {
   useEffect(() => {
     totalCost();
   }, [order]);
+  useEffect(() => {
+    if (localStorage.getItem('order')) {
+      setorder(order => JSON.parse(localStorage.getItem('order')))
+    }
+  }, []);
   const onCartClick = () => {
     setCartModal((cartModal) => (cartModal = !cartModal));
   };
@@ -42,6 +47,7 @@ const App = () => {
         name,
       };
     }
+    localStorage.setItem('order', JSON.stringify(preOrder))
     setorder((order) => preOrder);
   };
   const deleteColor = (model, color) => {
@@ -52,7 +58,7 @@ const App = () => {
     if (Object.keys(preOrder[model]).length === 1) {
       delete preOrder[model];
     }
-    console.log(preOrder);
+    localStorage.setItem('order', JSON.stringify(preOrder))
     setorder((order) => preOrder);
   };
   const totalCost = () => {

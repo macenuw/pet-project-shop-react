@@ -30,7 +30,7 @@ $mail->addAddress($email);     // Add a recipient
 $mail->addAddress('sasha1992bogachenko@gmail.com');               // Name is optional
 // $mail->addAddress('bogachenkoana@gmail.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
+//$mail->addCC('yfkcpsxtyyddiqno');
 //$mail->addBCC('bcc@example.com');
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
