@@ -1,38 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.753449e0.css",
-    "main.js": "/static/js/main.062f70f1.js",
-    "static/media/slide1.jpg": "/static/media/slide1.3eeb5fbc0f94039b7dd9.jpg",
-    "static/media/slide2.jpg": "/static/media/slide2.69b3c8ca5b7e05482c52.jpg",
-    "static/media/slide3.jpg": "/static/media/slide3.1411f69d81bb94450964.jpg",
-    "static/media/about-bg.jpg": "/static/media/about-bg.8fc926cf5031255ed2a7.jpg",
-    "static/media/autumn.jpg": "/static/media/autumn.40706df89c3116597bf1.jpg",
-    "static/media/summer.jpg": "/static/media/summer.f519824b3ccc3d944aac.jpg",
+    "main.css": "/static/css/main.e2f0793b.css",
+    "main.js": "/static/js/main.d2ee7fc6.js",
     "static/media/Cormorant-Bold.woff2": "/static/media/Cormorant-Bold.b55c2ac5357a5619de38.woff2",
     "static/media/CormorantInfant-Bold.woff2": "/static/media/CormorantInfant-Bold.4d22d232a5c4e03fc588.woff2",
-    "static/media/winter.jpg": "/static/media/winter.971ce27823737cfa5dbe.jpg",
+    "static/media/slide2.jpg": "/static/media/slide2.38bffca1fc829e13bdf9.jpg",
+    "static/media/slide1.jpg": "/static/media/slide1.aea71c38c724beb1e68f.jpg",
+    "static/media/slide3.jpg": "/static/media/slide3.fd58c5aebe8643dcc5b4.jpg",
     "static/media/CormorantInfant-Bold.woff": "/static/media/CormorantInfant-Bold.e7ed83b1aec3ee93149d.woff",
     "static/media/Cormorant-Bold.woff": "/static/media/Cormorant-Bold.6010bf81146e94c75716.woff",
     "static/media/Roboto-Regular.woff2": "/static/media/Roboto-Regular.008d5c510449b4e27ec9.woff2",
     "static/media/Roboto-Bold.woff2": "/static/media/Roboto-Bold.70afbc9165af25d22354.woff2",
     "static/media/Roboto-Medium.woff2": "/static/media/Roboto-Medium.309e9457f80969d4c59a.woff2",
+    "static/media/about-bg.jpg": "/static/media/about-bg.de2b51978a4394cc2c84.jpg",
     "static/media/Raleway-Medium.woff2": "/static/media/Raleway-Medium.c13bc49af7874d0410f9.woff2",
+    "static/media/summer.jpg": "/static/media/summer.53cc6f6364f39b48daa4.jpg",
+    "static/media/autumn.jpg": "/static/media/autumn.488634e08d6c0e2361d1.jpg",
     "static/media/Roboto-Medium.woff": "/static/media/Roboto-Medium.bb4a72508620602fc888.woff",
     "static/media/Roboto-Bold.woff": "/static/media/Roboto-Bold.00f54dcb163757355b2d.woff",
     "static/media/Roboto-Regular.woff": "/static/media/Roboto-Regular.d255c3ec15fbb3290d50.woff",
     "static/media/Raleway-Medium.woff": "/static/media/Raleway-Medium.70ea2df10cf31f59fd9e.woff",
-    "static/media/kyivstar.png": "/static/media/kyivstar.bcaa187f23ab5df07fd9.png",
     "static/media/PoiretOne-Regular.woff2": "/static/media/PoiretOne-Regular.e3345ecf4dd93fbb278d.woff2",
+    "static/media/winter.jpg": "/static/media/winter.279f087109d181785a98.jpg",
     "static/media/PoiretOne-Regular.woff": "/static/media/PoiretOne-Regular.8ab7e47d8734f5a547d7.woff",
-    "static/media/mail.png": "/static/media/mail.b317b6debe0cf1a03044.png",
-    "static/media/life.png": "/static/media/life.3eabdbed4c72a694b52b.png",
     "static/media/logo.webp": "/static/media/logo.82e2cd1008675da157fc.webp",
     "index.html": "/index.html",
-    "main.753449e0.css.map": "/static/css/main.753449e0.css.map",
-    "main.062f70f1.js.map": "/static/js/main.062f70f1.js.map"
+    "main.e2f0793b.css.map": "/static/css/main.e2f0793b.css.map",
+    "main.d2ee7fc6.js.map": "/static/js/main.d2ee7fc6.js.map"
   },
   "entrypoints": [
-    "static/css/main.753449e0.css",
-    "static/js/main.062f70f1.js"
+    "static/css/main.e2f0793b.css",
+    "static/js/main.d2ee7fc6.js"
   ]
 }
